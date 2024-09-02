@@ -9,7 +9,8 @@ Para conseguir este comportamiento en nuestros objetos, debemos implementar la i
 Debemos prestar especial atención cuando nuestra clase posee atributos no serializables, como file handlers o conexiones a la red. Pues la serialización de dichos objetos puede no ser seguro o imposible de realizarlo de manera automática.
 
 <br>
-# Transient y static
+
+# Atributos transient y static
 Al diseñar clases serializables, podemos tener atributos que no deben ser serializados, por seguridad o porque simplemente no es necesario. Para ello, podemos marcarlos como transient o static:
 
 `transient`: sirve para excluir datos confidenciales o valores temporales de la serialización. Protege la información confidencial y evita guardar datos innecesarios.
