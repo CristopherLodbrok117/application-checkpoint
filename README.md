@@ -60,8 +60,8 @@ Fuente: https://medium.com/@chanakaanuruddha/serialization-in-java-best-practice
 
 # Resultados
 Ilustraremos este comportamiento utilizando tres clases:
-* `AplicationCheckpoint`: la clase principal
-* `Champion`: sera nuestra clase que implementa Serializable
+* `ApplicationCheckpoint`: la clase principal
+* `Champion`: sera la clase que implemente Serializable. Su estado sera serializado y guardado en un archivo con extensión *.ser*
 * `GameControl`: esta clase esta encargada de hacer upgrades a campeones, provocar un error durante la ejecución, guardar y cargar checkpoints cuando un error sea capturado.
 
 <br>
