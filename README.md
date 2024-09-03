@@ -57,3 +57,18 @@ La principal preocupación de seguridad con la serialización de Java radica en 
 <br><br>
 
 Fuente: https://medium.com/@chanakaanuruddha/serialization-in-java-best-practices-and-strategies-for-protecting-your-data-7fe82a8ea32b
+
+# Resultados
+Ilustraremos este comportamiento utilizando tres clases:
+* `AplicationCheckpoint`: la clase principal
+* `Champion`: sera nuestra clase que implementa Serializable
+* `GameControl`: esta clase esta encargada de hacer upgrades a campeones, provocar un error durante la ejecución, guardar y cargar checkpoints cuando un error sea capturado.
+
+<br>
+
+![Captura 1](https://github.com/CristopherLodbrok117/application-checkpoint/blob/124a42e4ea8c9ee07e84cacccdb9a31c5c0b004f/checkpoint_1.png)
+
+<br>
+
+![Captura 2](https://github.com/CristopherLodbrok117/application-checkpoint/blob/124a42e4ea8c9ee07e84cacccdb9a31c5c0b004f/checkpoint%202.png)
+
